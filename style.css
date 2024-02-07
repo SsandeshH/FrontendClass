@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* topbar Starting */
+.top_bar {
+    background-color: black;
+    color: white;
+    padding: 9px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.top_bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top_bar i {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 618px) {
+    .top_bar {
+       display: none;
+    }
+    
+}
+/* topbar end */
+
+/* header Section  */
+
+.header_section {
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header_section logo h2 {
+
+    font-variant: small-caps;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.header_section .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header_section ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+}
+
+.header_section ul li {
+    padding: 3px 8px;
+
+}
+
+.header_section ul li:hover {
+    background-color: #ffc583;
+    cursor: pointer;
+}
+
+.header_section .dropdown{
+    background-color: antiquewhite;
+    display: none;
+    padding: 10px;
+    margin-left: -20px;
+    position: absolute;
+    top:20px;
+    z-index: 1000;
+}
+
+.nav_link{
+    position: relative;
+}
+.nav_link:hover .dropdown{
+    display: block;
+}
+.blog_link{
+    position:relative;
+}
+.blog_link:hover .dropdown{
+    display: block;
+}
+.menu_bar{
+    display: none;
+}
+.menu_bar i{
+
+    font-size: 25px;
+    cursor: pointer;
+}
+@media screen and (max-width: 775px){
+    .container{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 690px){
+    .nav_elements ul{
+        display: none;
+    }
+    .menu_bar {
+        display: block;
+    }
+}
+@media screen and (max-width: 689px){
+    .header_section{
+        background-color: black;
+        color: white;
+    }
+}
+
+/* header section end */
+
+/* hero section styling front */
+.hero_section{
+    background-color: beige;
+    color: black;
+    position: relative;
+    
+}
+
+.hero_section .overlay{
+    height: 700px;
+    width: 100%;
+    background: url("./img/ryuk-death-note-4k-ka-1920x1080.jpg") no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    
+}
+.hero_section_content p{
+    font-size: 18px;
+    font-style: italic;
+    padding: 20px 0;
+    top: 0;
+}
+.hero_section_content{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.hero_section_content button{
+    border: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 690px){
+    .hero_section .overlay{
+        height: 500px;
+    }
+    .hero_section_content {
+        top: 15%;
+        left:5%;
+    }
+    .hero_section_content p{
+        font-size: 16px;
+
+    }
+    .hero_section h1{
+        font-size: 30px;
+    }
+}
+/* hero section styling end */
+
+/* Course Hightlight section start */
+
+.course_hightlights {
+    position: relative;
+    top: -50px;
+}
+.course_hightlights .container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+}
+.course_card{
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    padding: 0 20px;
+}
+.course_card h4{
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+.course_card p{
+    padding: 15px;
+}
+.course_card button{
+    border: none;
+    margin: 5px 15px 15px 15px;
+    padding: 5px 10px;
+    background-color: beige;
+    color: black;
+    cursor:pointer;
+}
+.course_card button:hover{
+    background-color: silver;
+}
+
+
+/* Course Hightlight section end */
+
+/* Popular courses start */
+.popular_course .container{
+    display: flex;
+    flex-wrap: wrap;
+    
+    row-gap: 10px;
+    justify-content: center;
+}
+.popular_course{
+    padding: 5px;
+    margin-top: -30px;
+}
+.head{
+    text-align: center;
+    padding: 30px;
+}
+.head h2{
+    font-size: 40px;
+    color: black;
+}
+.head height:before{
+    content: "";
+     width: 50px; 
+    height: 4px;
+    background-color: aquamarine;
+    display: block;
+    margin: 20px auto
+} 
+.popular_course .course_card img{
+    width: 100%;
+    height: 190px;
+}
+.popular_course .course_card h5{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.popular_course .course_card p{
+    font-style: italic;
+    margin-top: -20px;
+}
+
+/* Popular courses end */
+
+/* mid section start */
+.mid_section{
+    background-color: orangered;
+    padding: 50px;
+    width: 100%;
+}
+.mid_section .container{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+}
+.mid_section button{
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.mid_section button:hover{
+    background-color: black;
+    color: white;
+}
+.testimonial_section{
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(./img/hogwarts-castle-.jpg);
+    background-size: cover;
+}
+.testimonial_section h2{
+    color: white;
+}
+.testi_content {
+    color: white;
+}
+.testimonial_card .testi_img img{
+    height: 80px;
+    width:100px;
+    border-radius: 50%;
+}
+.testimonial_card p{
+    color: white;
+    font-size: 17px;
+    padding: 20px;
+    font-style: italic;
+}
+.name_and_position h4{
+    color: white;
+    font-size: 27px;
+    padding-top: 15px;
+}
+
+/* mid section end */
+
+/* footer section */
+.footer_section .container{
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
+    background-color: #ffc583;
+    color: black;
+    width: 97%;
+    padding: 15px;
+}
+.footer_section h4{
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.footer_section ul{
+    list-style: none;
+}
+.footer_link .social_icons ul{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+.footer_section .social_icons li i{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.footer_section p{
+   width: 85%;
+   text-align: center;
+   margin: 40px;
+   border-top: 1px solid #ccc;
+   padding-top: 40px;
+}
+/* footer section */
