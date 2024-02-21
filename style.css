@@ -58,7 +58,7 @@
 
 }
 
-.header_section ul {
+.header_section .element_container {
     list-style: none;
     display: flex;
     gap: 12px;
@@ -87,8 +87,18 @@
 .nav_link{
     position: relative;
 }
+
 .nav_link:hover .dropdown{
     display: block;
+}
+.close{
+    display: none;
+    z-index: 10000;
+    top: 45px;
+    position: absolute;
+    font-size: 27px;
+    color: white;
+    padding: 5px;
 }
 .blog_link{
     position:relative;
@@ -110,8 +120,18 @@
     }
 }
 @media screen and (max-width: 690px){
-    .nav_elements ul{
+    .nav_elements .element_container{
         display: none;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        width: 230px;
+        position: absolute;
+        right: 0;
+        top: 20px;
+        height: calc(100vh - 40px);
+        z-index: 1000;
+        padding: 50px 20px;
     }
     .menu_bar {
         display: block;
@@ -121,6 +141,10 @@
     .header_section{
         background-color: black;
         color: white;
+    }
+    .nav_elements .element_container{
+        top: 35px;
+        height: calc(100vh - 35px);
     }
 }
 
